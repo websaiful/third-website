@@ -58,19 +58,61 @@ a.active,a:hover{
 #check:checked ~ .checkbtn i:before{
     content: "\f00d";
 }
-/* content code start */
-.container{
-    width: 1000px;
-    margin: 50px auto;
-    
-    
+@media only screen and (max-width:992px){
+    .checkbtn{
+        display: block;
+    }
+#check:checked ~ ul{
+    left: 0%;
+}
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    ul{
+        position: fixed;
+        top: 80px;
+        left: -250px;
+        background-color: #2c4730;
+        width: 250px;
+        height: 60vh;
+        text-align: center;
+        transition: .5s ease;
+
+    }
+    nav ul li{
+        display: block;
+        line-height: 10px;
+        margin: 0 0;
+        border-bottom: 1px solid #fff;
+        background:#2c4730 ;
+        cursor: pointer;
+        padding: 10px 0;
+        transition: .5s;
+
+       
+    }
+    nav ul li:hover{
+        background:#427049 ;
+    }
+    ul li a{
+        font-size: 35px;
+        display: block;
+        }
+    a:hover,a.active{
+        background: none;
+        color: #EAB543;
+    }
     
 }
+/* content code start */
+
 .key{
     text-align: center;
     font-size: 45px;
     color: red;
     padding-bottom: 15px;
+    padding: 20px;
     
     
 }
@@ -79,6 +121,8 @@ a.active,a:hover{
     
 }
 .parent-div{
+    width: 1000px;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -136,14 +180,13 @@ a.active,a:hover{
     display: block;
 }
 /* content code end */
-footer{
+
+.footer-container{
     background-color: #1B1464;
 }
-.footer-container{
+.child-parent{
     width: 1000px;
     margin: 0 auto;
-}
-.child-parent{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
@@ -188,92 +231,37 @@ footer{
     margin-bottom: 20px;
     font-size: 25px;
 }
+/* content code responsive here */
 
-@media only screen and (max-width:992px){
-    .checkbtn{
-        display: block;
-    }
-#check:checked ~ ul{
-    left: 0%;
-}
-    label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    }
-    ul{
-        position: fixed;
-        top: 80px;
-        left: -250px;
-        background-color: #2c4730;
-        width: 250px;
-        height: 80vh;
-        text-align: center;
-        transition: .5s ease;
-
-    }
-    nav ul li{
-        display: block;
-        line-height: 10px;
-        margin: 0 0;
-        border-bottom: 1px solid #fff;
-        background:#2c4730 ;
-        cursor: pointer;
-        padding: 10px 0;
-        transition: .5s;
-
-       
-    }
-    nav ul li:hover{
-        background:#427049 ;
-    }
-    ul li a{
-        font-size: 35px;
-        display: block;
-        }
-    a:hover,a.active{
-        background: none;
-        color: #EAB543;
-    }
-    /* content code */
-
-    .container{
-        width: 700px;
-    }
+@media only screen and (max-width:688px){
     .parent-div{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* footer code */
-    .footer-container{
-        width: 700px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        grid-gap: 20px;
     }
     .child-parent{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }
-    .fist-child p:nth-child(2){
-        text-align: justify;
-        
-       
+        width: 100%;
+        grid-gap: 20px;
     }
 }
 
-@media only  screen and (max-width:768px){
-
-    .container{
-        width: 500px;
-    }
+@media only screen and (min-width:689px) and (max-width:999px){
     .parent-div{
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        grid-gap: 20px;
+    }
+    .child-parent{
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        grid-gap: 20px;
     }
+}
 
-    /* footer section code start  */
-    .footer-container{
-        width: 500px;
-    }
-    .fist-child{
-        text-align: center;
-    }
-} 
+
+
