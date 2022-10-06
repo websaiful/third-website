@@ -54,3 +54,43 @@ function fun5(){
         clearInterval(set5);
     };
 };
+var skill6 = document.getElementById('skill-lavel6');
+var count6 = 0;
+var set6 = setInterval(fun6,100)
+function fun6(){
+    count6++
+    skill6.innerHTML = count6 + '%';
+    if (count6 == 50){
+        clearInterval(set6);
+    };
+};
+var skill7 = document.getElementById('skill-lavel7');
+var count7 = 0;
+var set7 = setInterval(fun7,100)
+function fun7(){
+    count7++
+    skill7.innerHTML = count7 + '%';
+    if (count7 == 70){
+        clearInterval(set7);
+    };
+};
+var skill8 = document.getElementById('skill-lavel8');
+var count8 = 0;
+var set8 = setInterval(fun8,100)
+function fun8(){
+    count8++
+    skill8.innerHTML = count8 + '%';
+    if (count8 == 60){
+        clearInterval(set8);
+    };
+};
+var skill9 = document.getElementById('skill-lavel9');
+var count9 = 0;
+var set9 = setInterval(fun9,100)
+function fun9(){
+    count9++
+    skill9.innerHTML = count9 + '%';
+    if (count9 == 80){
+        clearInterval(set9);
+    };
+};
