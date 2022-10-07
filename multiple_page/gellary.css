@@ -157,28 +157,32 @@ a.active,a:hover{
     padding: 20px 0;
 }
 .fist-child{
-    text-align: center;
-}
-.fist-child p:nth-child(2){
-    text-align: justify;
     color: #fff;
-    margin-bottom: 25px;
-    font-size: 20px;
-    text-align: center;
+    
 }
-.fist-child p:nth-child(3){
-    color: #fff;
+.fist-child p{
     font-size: 20px;
+    margin-bottom: 10px;
+}
+.fist-child p:nth-child(5){
+    margin-top: 25px;
+}
+.fist-child i{
+    color: gray;
 }
 .second-child a{
     display: block;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 15px;
     text-align: center;
+    letter-spacing: .2rem;
 }
 .third-child{
     text-align: center;
+}
+.third-child a{
+    background: none;
 }
 .third-child p{
     color: #fff;
@@ -200,6 +204,10 @@ a.active,a:hover{
         width: 100%;
         grid-gap: 20px;
     }
+    .fist-child p{
+        margin-left: 80px;
+        margin-right: 30px;
+    }
 }
 
 @media only screen and (min-width:689px) and (max-width:999px){
@@ -214,6 +222,10 @@ a.active,a:hover{
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
         grid-gap: 20px;
+    }
+    .fist-child {
+       
+        text-align: center;
     }
 }
 
