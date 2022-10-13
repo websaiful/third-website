@@ -5,6 +5,9 @@
     text-decoration: none;
     list-style-type: none;
 }
+body{
+    background-color: #2c2c54;
+}
 nav{
     background-color: #2C3A47;
     height: 80px;

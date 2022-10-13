@@ -6,6 +6,9 @@
     text-decoration: none;
     list-style-type: none;
 }
+body{
+    background-color: gray;
+}
 nav{
     background-color: #2C3A47;
     height: 80px;
@@ -129,7 +132,7 @@ a.active,a:hover{
 }
 .single-card{
     text-align: center;
-    box-shadow: 3px 3px 5px gray;
+    box-shadow: 3px 3px 5px #2C3A47;
     border-radius: 5px;
 }
 
